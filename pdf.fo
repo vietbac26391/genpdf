@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Example from: http://www.renderx.net
+    Copyright © 2004 RenderX, Inc.-->
+
+<fo:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+    <fo:layout-master-set>
+        <fo:simple-page-master master-name="my-page">
+            <fo:region-body margin="1in"/>
+        </fo:simple-page-master>
+    </fo:layout-master-set>
+    <fo:page-sequence master-reference="my-page">
+        <fo:flow flow-name="xsl-region-body">
+            <fo:table font-family="Arial" width="450pt">
+                <fo:table-body>
+                    <!-- Header start-->
+                    <fo:table-row>
+                        <fo:table-cell padding="9pt 12pt">
+                            <fo:table width="100%">
+                                <fo:table-body>
+                                    <fo:table-row>
+                                        <fo:table-cell text-align="left" height="66pt">
+                                            <fo:table>
+                                                <fo:table-body>
+                                                    <fo:table-row>
+                                                        <fo:table-cell>
+                                                            <fo:block>
+                                                                <fo:external-graphic  src="url(file:///D:/email_new/email/logo-adayroi.png)" />
+                                                            </fo:block>
+                                                        </fo:table-cell>
+                                                    </fo:table-row>
+                                                </fo:table-body>
+                                            </fo:table>
+                                        </fo:table-cell>
+                                        <fo:table-cell>
+                                            <fo:table width="100%">
+                                                <fo:table-body>
+                                                    <fo:table-row>
+                                                        <fo:table-cell text-align="right" font-weight="bold" font-size="13.5pt" line-height="22.5pt">
+                                                            <fo:block>Vé điện tử / Electronic ticket</fo:block>
+                                                        </fo:table-cell>
+                                                    </fo:table-row>
+                                                    <fo:table-row>
+                                                        <fo:table-cell text-align="right" font-size="8.25pt" line-height="12pt">
+                                                            <fo:block>Tổng đài hỗ trợ/Customer Support: <fo:inline font-weight="bold">+84-24-39759568</fo:inline></fo:block>
+                                                        </fo:table-cell>
+                                                    </fo:table-row>
+                                                    <fo:table-row>
+                                                        <fo:table-cell text-align="right" font-size="8.25pt" line-height="12pt">
+                                                            <fo:block>Mã đơn hàng Adayroi/Order number: 8912391910</fo:block>
+                                                        </fo:table-cell>
+                                                    </fo:table-row>
+                                                </fo:table-body>
+                                            </fo:table>
+                                        </fo:table-cell>
+                                    </fo:table-row>
+                                </fo:table-body>
+                            </fo:table>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <!-- Header end-->
+                    <!-- Body start-->
+                    <fo:table-row>
+                        <fo:table-cell padding="0pt 12pt" width="100%">
+                            <fo:table width="100%" border="0.75pt solid #F3F4F6">
+                                <fo:table-body>
+                                   <fo:table-row>
+                                       <fo:table-cell text-align="left" padding="6pt 9pt" font-weight="bold" font-size="13.5pt" line-height="22.5pt">
+                                           <fo:block>Ha Noi - Ho Chi Minh</fo:block>
+                                       </fo:table-cell>
+                                   </fo:table-row>
+                                    <fo:table-row>
+                                        <fo:table-cell text-align="left" padding="0pt 9pt" font-weight="bold" font-size="10.5pt" line-height="16.5pt" color="#767880" >
+                                            <fo:block>Thứ 6, Fri 17/05/2019</fo:block>
+                                        </fo:table-cell>
+                                    </fo:table-row>
+                                    <fo:table-row>
+                                        <fo:table-cell text-align="left" padding="5.25pt 9pt">
+                                            <fo:table width="100%">
+                                                <fo:table-column column-number="1" column-width="40%" /> 
+                                                <fo:table-column column-number="2" column-width="60%" />
+                                                <fo:table-body>
+                                                    <fo:table-row>
+                                                        <fo:table-cell font-size="9pt" line-height="13.5pt" color="#8E9098">
+                                                            <fo:block><fo:inline color="#333">Mã đặt chỗ PNR /</fo:inline>Airline Confirmation:</fo:block>
+                                                        </fo:table-cell>
+                                                        <fo:table-cell font-size="11.25pt" line-height="13.5pt" font-weight="bold" color="#E53935" width="60%">
+                                                            <fo:block>ABCYUO</fo:block>
+                                                        </fo:table-cell>
+                                                    </fo:table-row>
+                                                </fo:table-body>
+                                            </fo:table>
+                                        </fo:table-cell>
+                                    </fo:table-row>
+                                </fo:table-body>
+                            </fo:table>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <!-- Body end-->
+                </fo:table-body>
+            </fo:table>
+        </fo:flow>
+    </fo:page-sequence>
+</fo:root>
